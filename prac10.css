@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 3rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.level-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    /* padding: 3rem 0; */
+    transition: height 300ms ease-in-out,
+        padding 300ms ease-in-out;
+    height: 0;
+    /* display: none; */
+}
+
+.level-container .level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level .level-btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 0.5em 1.5em;
+    color: #d6d3d3;
+    border-radius: 60px;
+    background: rebeccapurple;
+    /* border:3px solid rgb(102, 39, 113); */
+}
+
+.level span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.3em auto;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.header h1 {
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.setting-header {
+    padding: 1.5rem 0;
+    display: flex;
+}
+
+.setting-header-text {
+    font-size: 2rem;
+    font-weight: 700;
+    flex: 8;
+    text-align: center;
+    color: #fff;
+}
+
+.setting-icon {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    transform-origin: center;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.setting-container {
+    background: #343342;
+    width: 80%;
+    padding: 0rem 3rem;
+    margin: 0 auto;
+}
+
+.game-container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    background: #3f3e50;
+}
+
+.game-container h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.game-container form {
+    margin: 5rem;
+}
+
+.input-box input[type='number'] {
+    border: 2px solid rgb(63, 229, 237);
+    margin: 0 2rem;
+    padding: 0.5em 1em;
+    font-size: 1.6rem;
+}
+
+.btn {
+    background: rgb(63, 229, 237);
+    width: 10em;
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    padding: 0.5em 0;
+}
+
+.game-container .loader-container {
+    display: flex;
+    border: 2px solid #fff;
+    position: relative;
+    margin: 2rem 3rem;
+}
+
+.loader-container span {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    z-index: 5;
+    text-align: center;
+}
+
+.loader-container .loader {
+    position: absolute;
+    background: #000;
+    height: 100%;
+    width: 0%;
+    transition: all 2s ease-in-out;
+}
+
+/* .loader-container:hover .loader {
+    width: 100%;
+} */

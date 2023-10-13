@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prac10.css">
+    <script src="prac10.js" defer></script>
+    <script src="https://kit.fontawesome.com/27db7784e5.js" crossorigin="anonymous"></script>
+    <title>Lucky Number</title>
+</head>
+
+<body>
+    <div class="main-container container">
+        <div class="setting-container">
+            <div class="setting-header">
+                <span class="setting-header-text">Easy</span>
+                <i class="fa-solid fa-gear setting-icon"></i>
+            </div>
+            <div class="level-container">
+                <div class="level">
+                    <a href="#" class="level-btn">Easy</a>
+                    <span>1 - 100</span>
+                </div>
+                <div class="level">
+                    <a href="#" class="level-btn">Medium</a>
+                    <span>1 - 500</span>
+                </div>
+                <div class="level">
+                    <a href="#" class="level-btn">Hard</a>
+                    <span>1 - 1000</span>
+                </div>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="header">
+                <h1>Guess the correct number</h1>
+            </div>
+            <form class="input-box">
+                <input type="number" name="gnum" id="gnum" placeholder="1 - 100">
+                <input type="submit" class="btn" value="Submit">
+            </form>
+            <div class="loader-container">
+                <span>0% closer</span>
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
